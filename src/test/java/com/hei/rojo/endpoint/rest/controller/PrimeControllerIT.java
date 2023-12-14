@@ -15,6 +15,6 @@ public class PrimeControllerIT extends FacadeIT {
     @Test
     void isPrimeTest() {
         BigInteger primeNumber = primeController.isPrime();
-        assertTrue(primeNumber.isProbablePrime(99), "Number is not a prime number");
+        assertTrue(primeNumber.isProbablePrime(100), "Number is not a prime number");
     }
 }
