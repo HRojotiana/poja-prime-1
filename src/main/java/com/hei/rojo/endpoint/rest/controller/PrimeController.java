@@ -9,6 +9,6 @@ public class PrimeController {
     @GetMapping("/new-prime")
     public BigInteger isPrime(){
         Random random = new Random();
-        return BigInteger.probablePrime(64, random);
+        return BigInteger.probablePrime(10_000, random);
     }
 }
