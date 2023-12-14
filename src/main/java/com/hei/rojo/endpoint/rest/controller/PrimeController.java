@@ -15,6 +15,6 @@ public class PrimeController {
     @GetMapping("/new-prime")
     public BigInteger isPrime(){
         SecureRandom secureRandom = new SecureRandom();
-        return BigInteger.probablePrime(10_000, secureRandom);
+        return BigInteger.probablePrime(100, secureRandom);
     }
 }
